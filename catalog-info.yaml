@@ -1,0 +1,28 @@
+# catalog-info.yaml
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: my-service
+  description: A sample service component for demonstration purposes
+  labels:
+    team: my-team
+    project: example-project
+spec:
+  type: service
+  lifecycle: production
+  owner: team-owner
+  system: my-system
+  providesApis:
+    - my-api
+  dependsOn:
+    - api:my-dependency-api
+  subcomponents:
+    - component: my-subcomponent
+  # Optional fields to integrate other Backstage plugins
+  links:
+    - url: https://my-service.example.com
+      title: "Production URL"
+    - url: https://my-service-dev.example.com
+      title: "Development URL"
+    - url: https://github.com/my-org/my-service
+      title: "GitHub Repository"
