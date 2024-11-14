@@ -9,7 +9,7 @@ metadata:
     project: urgent
   annotations:
     backstage.io/techdocs-ref: dir:.
-    github.com/project-slug: abhinaytn/amadeus-node
+    backstage.io/managed-by-location: url:http://github.com/backstage/backstage/blob/master/catalog-info.yaml
 spec:
   type: service
   lifecycle: production
