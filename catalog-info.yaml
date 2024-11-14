@@ -9,6 +9,7 @@ metadata:
     project: urgent
   annotations:
     backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: abhinaytn/amadeus-node
 spec:
   type: service
   lifecycle: production
