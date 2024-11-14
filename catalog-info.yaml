@@ -6,33 +6,24 @@ metadata:
   description: A service for handling travel bookings, part of the Amadeus travel platform.
   labels:
     team: reservations
-    domain: travel-technology
-    project: amadeus-platform
+    project: urgent
   annotations:
     backstage.io/techdocs-ref: dir:.
 spec:
   type: service
   lifecycle: production
   owner: reservations-team
-  system: booking-system
+  system: booking
   providesApis:
-    - api:booking-api
+    - booking-api
   dependsOn:
     - api:payment-gateway-api
     - api:inventory-management-api
   subcomponents:
     - component: user-notifications
     - component: booking-validation
+  # Optional fields to integrate other Backstage plugins
   links:
-    - url: https://booking.amadeus.com
-      title: "Booking Service - Production"
-    - url: https://staging.booking.amadeus.com
-      title: "Booking Service - Staging"
-    - url: https://github.com/amadeus-tech/booking-service
-      title: "GitHub Repository"
-    - url: https://jira.amadeus.com/projects/BOOK
-      title: "JIRA Project"
-    - url: https://docs.amadeus.com/booking-service
-      title: "Service Documentation"
-    - url: https://grafana.amadeus.com/d/abc123/booking-service
-      title: "Grafana Dashboard"
+    links:
+    - url: https://amadeus.wd3.myworkdayjobs.com/en-US/jobs/jobs/details/Product-Manager-Cloud-Transformation_R23448?locationCountry=54c5b6971ffb4bf0b116fe7651ec789a&Worker_Type=500e98adb60a01e732dd99deee1acf1d
+      title: "Internships"
