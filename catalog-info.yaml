@@ -2,27 +2,37 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: my-service
-  description: A sample service component for demonstration purposes
+  name: booking-service
+  description: A service for handling travel bookings, part of the Amadeus travel platform.
   labels:
-    team: my-team
-    project: example-project
+    team: reservations
+    domain: travel-technology
+    project: amadeus-platform
 spec:
   type: service
   lifecycle: production
-  owner: team-owner
-  system: my-system
+  owner: reservations-team
+  system: booking-system
   providesApis:
-    - my-api
+    - api:booking-api
   dependsOn:
-    - api:my-dependency-api
+    - api:payment-gateway-api
+    - api:inventory-management-api
   subcomponents:
-    - component: my-subcomponent
-  # Optional fields to integrate other Backstage plugins
+    - component: user-notifications
+    - component: booking-validation
   links:
-    - url: https://my-service.example.com
-      title: "Production URL"
-    - url: https://my-service-dev.example.com
-      title: "Development URL"
-    - url: https://github.com/my-org/my-service
+    - url: https://booking.amadeus.com
+      title: "Booking Service - Production"
+    - url: https://staging.booking.amadeus.com
+      title: "Booking Service - Staging"
+    - url: https://github.com/amadeus-tech/booking-service
       title: "GitHub Repository"
+    - url: https://jira.amadeus.com/projects/BOOK
+      title: "JIRA Project"
+    - url: https://docs.amadeus.com/booking-service
+      title: "Service Documentation"
+    - url: https://grafana.amadeus.com/d/abc123/booking-service
+      title: "Grafana Dashboard"
+annotations:
+  backstage.io/techdocs-ref: dir:.
