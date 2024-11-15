@@ -23,7 +23,6 @@ spec:
   subcomponents:
     - component: user-notifications
     - component: booking-validation
-  # Optional fields to integrate other Backstage plugins
   links:
     links:
     - url: https://amadeus.wd3.myworkdayjobs.com/en-US/jobs/jobs/details/Product-Manager-Cloud-Transformation_R23448?locationCountry=54c5b6971ffb4bf0b116fe7651ec789a&Worker_Type=500e98adb60a01e732dd99deee1acf1d
