@@ -10,6 +10,10 @@ metadata:
   annotations:
     backstage.io/techdocs-ref: dir:.
     github.com/project-slug: amadeus4dev/amadeus-node
+  links:
+    - url: https://amadeus.wd3.myworkdayjobs.com/en-US/jobs/jobs/details/Product-Manager-Cloud-Transformation_R23448?locationCountry=54c5b6971ffb4bf0b116fe7651ec789a&Worker_Type=500e98adb60a01e732dd99deee1acf1d
+      title: Internships
+      icon: code
 spec:
   type: service
   lifecycle: production
@@ -23,8 +27,3 @@ spec:
   subcomponents:
     - component: user-notifications
     - component: booking-validation
-  links:
-    links:
-    - url: https://amadeus.wd3.myworkdayjobs.com/en-US/jobs/jobs/details/Product-Manager-Cloud-Transformation_R23448?locationCountry=54c5b6971ffb4bf0b116fe7651ec789a&Worker_Type=500e98adb60a01e732dd99deee1acf1d
-      title: Internships
-      icon: code
